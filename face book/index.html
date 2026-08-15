@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook - Log In or Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page-container">
+    
+
+    <div class="left-section">
+      <div class="explore-container">
+        
+        <div class="explore-left">
+          <div class="fb-brand-logo">
+            <svg viewBox="0 0 36 36" fill="#0866FF" width="56" height="56">
+              <path d="M36 18c0-9.941-8.059-18-18-18S0 8.059 0 18c0 8.981 6.58 16.422 15.188 17.771V23.243h-4.32V18h4.32v-3.998c0-4.263 2.539-6.619 6.425-6.619 1.861 0 3.807.332 3.807.332v4.186h-2.145c-2.112 0-2.771 1.311-2.771 2.657V18h4.719l-.754 5.243h-3.965v12.528C29.42 34.422 36 26.981 36 18z"/>
+            </svg>
+          </div>
+          <h1 class="explore-title">
+            Explore<br />
+            the<br />
+            things<br />
+            <span class="highlight-text">you love</span>.
+          </h1>
+        </div>
+
+        <div class="explore-right">
+          <!-- Floating Emoji -->
+          <div class="floating-element emoji-badge">😆</div>
+
+          <!-- Card 1: Marketplace / Cushion -->
+          <div class="visual-card card-marketplace">
+            <div class="card-icon-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="#555">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              </svg>
+            </div>
+            <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=500&q=80" alt="Marketplace Item" />
+          </div>
+
+          <!-- Card 2: Skater / Story -->
+          <div class="visual-card card-story">
+            <div class="story-top-bar">
+              <div class="story-progress"></div>
+              <div class="time-tag">
+                <span>🕒</span> 16:45
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=600&q=80" alt="Skater Story" />
+            <div class="story-bottom-controls">
+              <div class="pill-control"></div>
+              <div class="circle-control"></div>
+              <div class="circle-control"></div>
+            </div>
+          </div>
+
+          <!-- Card 3: Saved Post / Tickets -->
+          <div class="visual-card card-saved">
+            <div class="card-icon-badge blue-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="#fff">
+                <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+              </svg>
+            </div>
+            <div class="saved-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=500&q=80" alt="Movie Tickets" />
+            </div>
+            <div class="saved-card-footer">
+              <div class="skeleton-line long"></div>
+              <div class="skeleton-line short"></div>
+            </div>
+          </div>
+
+          <!-- Floating Heart Icon -->
+          <div class="floating-element heart-badge">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+
+          <!-- Profile Avatar -->
+          <div class="floating-element profile-avatar">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="User Profile" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right Section: Login Form -->
+    <div class="right-section">
+      <div class="login-box">
+        <h2 class="login-heading">Log in to Facebook</h2>
+        
+        <form class="login-form">
+          <div class="input-group">
+            <input type="text" id="email" required placeholder=" " />
+            <label for="email">Email address or mobile number</label>
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="password" required placeholder=" " />
+            <label for="password">Password</label>
+          </div>
+
+          <button type="submit" class="btn-login">Log in</button>
+        </form>
+
+        <a href="#" class="forgot-link">Forgotten password?</a>
+
+        <div class="create-btn-wrapper">
+          <a href="#" class="btn-create">Create new account</a>
+        </div>
+
+        <div class="meta-footer">
+          <svg viewBox="0 0 60 12" width="65" height="14" fill="#0064e0">
+            <path d="M11.636 0c-1.89 0-3.376 1.057-4.417 2.502C6.182 1.057 4.694 0 2.805 0 1.01 0 0 1.253 0 3.328v6.236h2.247V3.882c0-1.025.424-1.743 1.344-1.743.957 0 1.488.766 1.488 2.02v5.405h2.247V3.882c0-1.025.423-1.743 1.343-1.743.958 0 1.489.766 1.489 2.02v5.405h2.247V3.328C14.44 1.253 13.43 0 11.636 0zM19.16 3.197c-1.228 0-2.223.498-2.827 1.326V3.328h-2.183v6.236h2.248V6.155c0-1.037.669-1.63 1.633-1.63.922 0 1.393.53 1.393 1.482v3.557h2.247V5.555c0-1.579-.909-2.358-2.511-2.358zm12.33 0c-2.483 0-4.24 1.83-4.24 4.298 0 2.457 1.746 4.298 4.24 4.298 1.865 0 3.238-.988 3.738-2.379h-2.298c-.286.438-.807.728-1.44.728-1.096 0-1.879-.756-1.954-1.837h5.753c.023-.172.036-.361.036-.56 0-2.438-1.574-4.548-3.835-4.548zm-1.91 3.29c.14-1.015.861-1.677 1.91-1.677 1.016 0 1.72.65 1.835 1.677h-3.745zM38.8 3.328h-2.183v1.365h-1.29v1.785h1.29v3.086c0 1.312.634 2.002 2.128 2.002.593 0 1.134-.108 1.487-.247V9.52c-.22.083-.512.123-.815.123-.62 0-.917-.291-.917-.923V6.478h1.732V4.693H38.8V3.328z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
